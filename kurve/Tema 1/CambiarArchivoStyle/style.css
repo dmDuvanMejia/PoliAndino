@@ -1,0 +1,75 @@
+#boton {
+    display: block;
+    padding: 30px;
+    background-color: red;
+    color: black;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 10px dashed blue;
+    border-radius: 100px;
+    transition: border 5s, background 10s, border-radius 5s, color 5s, text-align 2s;
+}
+
+#boton:hover {
+    border-radius: 150px;
+    background-color: blue;
+    color: white;
+    border: 10px solid red;
+    text-align: center;
+    font-size: 20px;
+}
+
+#box {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    color: black;
+    border: 5px solid black;
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 300px;
+    text-align: center;
+    animation-name: recorrido;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes recorrido {
+    0% {
+        margin-left: 0px;
+        transform: rotate();
+    }
+
+    25% {
+        border: 5px dashed black;
+        background-color: black;
+        color: red;
+    }
+
+    50% {
+        margin-left: 1200px;
+        transform: rotate();
+        border-radius: 1000px;
+    }
+
+    75% {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 5px;
+        background-color: blue;
+        color: white;
+    }
+
+    100% {
+        margin-left: 0px;
+        transform: rotate();
+        border-radius: 0px;
+    }
+}

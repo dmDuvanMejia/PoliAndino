@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'dancing-script';
+    src: url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap')
+}
+
+body {
+    background-color: #ccc;
+}
+
+h2 {
+    font-family: 'Verdana';
+    font-size: 24px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Nerko One', cursive;
+    font-size: 30px;
+    color: red;
+}
+
+p {
+    font-family: 'dancing-script';
+    font-size:20px;
+    color: orange;;
+}
