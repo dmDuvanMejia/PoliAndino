@@ -1,0 +1,19 @@
+ul {
+    height:30px;
+}
+
+li {
+    text-decoration: none;
+    font-size: 12px;
+    list-style: none;
+    line-height: 50px;
+}
+
+#content {
+    font-size:12px;
+}
+
+.box {
+    width: 150px;
+    border: 2px;
+}
