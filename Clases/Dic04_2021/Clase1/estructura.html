@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Semantica HTML</title>
+</head>
+<body>
+    <!-- Este es el encabezado -->
+    <header>
+        <img src="logo" alt="logo">
+        <nav>navegacion</nav>
+        <section>FOTOS DIAPOSITIVAS</section>
+        <nav>INFORMACION</nav>
+    </header>
+    <hr>
+    <!-- Este es el contenido principal -->
+    <main>
+        <section>TELEVISORES</section>
+        <section>CELULARES</section>
+        <section>AUDIO</section>
+        <section>ELECTRODOMESTICOS</section>
+
+        <hr>
+        <section>
+            <table>
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 4</td>
+                    <td>Info 5</td>
+                    <td>Info 6</td>
+                </tr>
+            </table>
+
+            <!-- Otra forma de realizar la tabla es utilizando de igual manera la semántica correspondiente de la table, indicando que existe un header, un body y un footer.
+Con respecto al ejemplo realizado se puede visualizar así: -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Encabezado 1</th>
+                        <th>Encabezado 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Info 1</td>
+                        <td>Info 2</td>
+                        <td>Info 3</td>
+                    </tr>
+                    <tr>
+                        <td>Info 4</td>
+                        <td>Info 5</td>
+                        <td>Info 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formularios</h2>
+            <form>
+                <input type="button" value="Soy un botón">
+                <br>
+                <input type="checkbox" name="" id="">
+                <br>
+                <input type="color" name="" id="">
+                <br>
+                <label for="nacimiento">Escriba su fecha de nacimiento</label>
+                <input type="date" name="nacimiento" id="">
+                <br>
+                <input type="datetime" name="" id="">
+                <br>
+                <input type="datetime-local" name="" id="">
+                <br>
+                <input type="email" name="" id="">
+                <br>
+                <input type="file" name="" id="">
+                <br>
+                <input type="hidden" name="">
+                <br>
+                <input type="image" src="" alt="">
+                <br>
+                <input type="month" name="" id="">
+                <br>
+                <input type="number" name="" id="">
+                <br>
+                <input type="password" name="" id="">
+                <br>
+                <input type="radio" name="" id="">
+                <br>
+                <input type="range" name="" id="">
+                <br>
+                <input type="tel" name="" id="">
+                <br>
+                <input type="text" name="" id="">
+                <br>
+                <input type="time" name="" id="">
+                <br>
+                <input type="url" name="" id="">
+                <br>
+                <input type="week" name="" id="">
+                <br>
+                <input type="reset" value="Enviar">
+                <br>
+                <input type="submit" value="Borrar">
+                <br>
+                
+
+
+            </form>
+        </section>
+
+    </main>
+    <hr>
+    <!-- Este es el pie de pagina_ -->
+    <footer>
+        <section>Contactenos</section>
+        <nav>Redes Sociales</nav>
+    </footer>
+</body>
+</html>
