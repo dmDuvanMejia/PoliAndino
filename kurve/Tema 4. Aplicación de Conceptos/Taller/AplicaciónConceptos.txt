@@ -1,0 +1,14 @@
+Aplicación de Conceptos Taller
+
+De acuerdo a los conceptos vistos anteriormente en todo el contenido del curso, desarrolla una Web basada en HTML, Estilos CSS y Algo de JavaScript. Sube un archivo Html como adjunto.
+
+CRITERIOS
+
+    La actividad se desarrolla de manera individual
+    Debes enviar el documento con las actividades solicitadas mediante capturas de pantalla, puede ser adjunta o una URL utilizando los recursos de la plataforma virtual.
+    Las respuestas las debes enviar en formato Word, PPT o PDF
+    Tipo de letra Arial 12
+    Debes referenciar los contenidos utilizados de la Web
+    Recuerda las normas APA para la presentación del taller
+
+Muchos éxitos
