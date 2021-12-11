@@ -1,0 +1,27 @@
+main {
+    background-color: lemonchiffon;
+}
+
+h1 {
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h2 {
+    color: lightgray;
+}
+
+.lista .lista-item {
+    font-size: 22px;
+}
+
+.lista .lista-item:first-child, .lista .lista-item:last-child {
+    font-weight: bolder;
+}
+
+footer {
+    display: flex;
+    color: olivedrab;
+    justify-content: flex-end;
+}
