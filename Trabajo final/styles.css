@@ -1,0 +1,40 @@
+.carousel-inner img {
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-menu {
+    position: absolute;
+    z-index: 1;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.plan-card {
+    /* position: absolute; */
+    background-image: url("./img/biblia.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    color: #fff;
+}
+
+.plan-card-title {
+    display: flex;
+    height: 100%;
+    margin: 5px;
+    padding: 15px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+/* #navbarSupportedContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:aqua;
+} */
