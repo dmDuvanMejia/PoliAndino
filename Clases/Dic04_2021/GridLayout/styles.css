@@ -1,0 +1,43 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+        "header header header header header"
+        "header header header header header"
+        "aside contenido contenido contenido contenido"
+        "aside contenido contenido contenido contenido"
+        "aside contenido contenido contenido contenido"
+        "aside contenido contenido contenido contenido"
+        "aside contenido contenido contenido contenido"
+        "aside contenido contenido contenido contenido"
+        "footer footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: greenyellow;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: lightskyblue;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color:purple;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightsalmon;
+}

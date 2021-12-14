@@ -1,0 +1,51 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+        "aside-left header header header header header aside-right"
+        "aside-left header header header header header aside-right"
+        "aside-left header header header header header aside-right"
+        "aside-left header header header header header aside-right"
+        "aside-left contenido contenido contenido contenido contenido aside-right"
+        "aside-left contenido contenido contenido contenido contenido aside-right"
+        "aside-left contenido contenido contenido contenido contenido aside-right"
+        "aside-left contenido contenido contenido contenido contenido aside-right"
+        "aside-left contenido contenido contenido contenido contenido aside-right"
+        "aside-left contenido contenido contenido contenido contenido aside-right"
+        "aside-left footer footer footer footer footer aside-right"
+        "aside-left footer footer footer footer footer aside-right";
+}
+
+.header {
+    grid-area: header;
+    background-color: greenyellow;
+}
+
+.aside-left {
+    grid-area: aside-left;
+    background-color: lightskyblue;
+}
+
+.aside-right {
+    grid-area: aside-right;
+    background-color: lightskyblue;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color:purple;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightsalmon;
+}

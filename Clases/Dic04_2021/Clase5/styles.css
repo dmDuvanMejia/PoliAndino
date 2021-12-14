@@ -4,8 +4,11 @@
     background-color: aquamarine;
     border: solid 1px black;
     display: grid;
-    grid-template-columns: 20% 40% 20% 20%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    /* grid-template-columns: 20% 40% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%; */
     /* grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 20% 20% 20% 20% 20%; */
 }
@@ -13,4 +16,16 @@
 .item {
     background-color:cornflowerblue;
     border: 1px solid white;
+}
+
+.contenedor .item:nth-child(7) {
+    color: crimson;
+    font-weight: bold;
+
+    grid-column: 2/3;
+    grid-row: 4/5;
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5; */
 }
