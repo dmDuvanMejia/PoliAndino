@@ -66,6 +66,9 @@
     opacity: 0.8;
 }
 
+#us figure img {
+    height: 550px;
+}
 /* #navbarSupportedContent {
     display: flex;
     justify-content: center;
