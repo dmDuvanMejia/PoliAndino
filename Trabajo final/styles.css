@@ -69,10 +69,21 @@
 #us figure img {
     height: 550px;
 }
-/* #navbarSupportedContent {
+
+.footer {
+    background-color: #556270;
+}
+
+.footer .logos {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color:aqua;
-} */
+}
+
+.follow img {
+    width: 50%;
+    display: flex;
+}
+
+.logo img {
+    width: 50%;
+}
