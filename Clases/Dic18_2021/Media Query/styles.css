@@ -1,0 +1,42 @@
+body {
+    background-color: coral;
+}
+
+/* MOBILE FIRST */
+/* @media screen and (min-width: 536px) {
+    body {
+        background-color: cornflowerblue;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: darkkhaki;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: hotpink;
+    }
+} */
+
+/* DSETOK FIRST */
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: hotpink;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: darkkhaki;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    body {
+        background-color: cornflowerblue;
+    }
+}

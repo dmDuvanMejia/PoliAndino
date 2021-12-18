@@ -1,0 +1,54 @@
+*, *::after, *::before{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.navegacion i {
+    color: #fff;
+    font-size:2rem;
+    margin-left: 5px;
+}
+
+ul li a {  
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li a:hover {
+    color: rgb(12, 75, 72);
+}
+
+ul li {
+    list-style-type: none;
+    background-color: cadetblue;
+    padding: 0 10px ;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: cadetblue;
+    padding: 0.5rem 0;
+}
+
+
+@media screen and (min-width: 768px){
+    
+    .navegacion {
+        flex-direction: row;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+}
