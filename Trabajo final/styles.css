@@ -87,3 +87,8 @@
 .logo img {
     width: 50%;
 }
+
+#nav-menu-navbar span{
+    color: #fff;
+    z-index: 99999999;
+}
