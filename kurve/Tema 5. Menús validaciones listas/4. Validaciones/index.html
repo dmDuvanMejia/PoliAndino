@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Clientes</legend>
+        <label for="text1">Textarea</label>
+        <textarea name="text1" id="" cols="30" rows="10"></textarea>
+        <br> <br>
+
+        <!-- Checkbox -->
+        <label>Tipo transporte</label> <br>
+        <input type="checkbox" name="auto" id="auto" value="auto">
+        <label for="auto">Auto</label> <br>
+        <input type="checkbox" name="moto" id="moto" value="moto">
+        <label for="moto">Moto</label> <br>
+        <input type="checkbox" name="otro" id="otro" value="otro">
+        <label for="otro">Otro</label> <br> <br> <br>
+
+        <!-- Radio Button -->
+        <label>Género</label> <br>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="genero">Masculino</label> <br>
+        <input type="radio" name="genero" id="femenino" value="femenino">
+        <label for="genero">Femenino</label> <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Menú desplegable</legend>
+       <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menú</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+       </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Datalist</legend>
+        <label>Seleccionar un navegador</label>
+        
+        <input list="navegadores" name="navegador" id="navegador">
+        <datalist id="navegadores" >
+            <option value="Edge">Edge</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+    </fieldset>
+
+    <fieldset>
+        <legend>Validaciones:</legend>
+
+        <form name="myForm" id="myForm" onsubmit="return validateForm()" method="post">
+            <label for="nombre">Primer Nombre</label>
+            <input type="text" name="nombre" id="nombre" maxlength="10" pattern="^[a-zA-Z]"
+                title="Solo letras"> <br><br>
+
+            <label for="nombre2">Segundo Nombre</label> 
+            <input type="text" name="nombre2" id="nombre2" maxlength="10"> <br><br>
+
+            <label for="apellido1">Primer Apellido</label>
+            <input type="text" name="apellido1" id="apellido1" maxlength="10"> <br><br>
+
+            <label for="apellido2">Segundo Apellido</label>
+            <input type="text" name="apellido2" id="apellido2" maxlength="10"> <br><br>
+
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="0" max="130"> <br><br>
+
+            <button type="submit" value="Enviar">Enviar</button>
+
+        </form>
+    </fieldset>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
