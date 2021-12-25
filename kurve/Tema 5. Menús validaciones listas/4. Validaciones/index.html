@@ -63,7 +63,7 @@
 
         <form name="myForm" id="myForm" onsubmit="return validateForm()" method="post">
             <label for="nombre">Primer Nombre</label>
-            <input type="text" name="nombre" id="nombre" maxlength="10" pattern="^[a-zA-Z]"
+            <input type="text" name="nombre" id="nombre" maxlength="10" pattern="^[a-zA-Z]{10}"
                 title="Solo letras"> <br><br>
 
             <label for="nombre2">Segundo Nombre</label> 
@@ -79,6 +79,8 @@
             <input type="number" name="edad" id="edad" min="0" max="130"> <br><br>
 
             <button type="submit" value="Enviar">Enviar</button>
+            <button type="button" onclick="clean()">Limpiar</button>
+            <input type="reset" value="Limpiar">
 
         </form>
     </fieldset>

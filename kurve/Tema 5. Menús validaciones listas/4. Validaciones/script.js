@@ -27,3 +27,7 @@ function validateForm() {
         return false;
     }
 }
+
+function clean() {
+    document.getElementById('myForm').reset();
+}
