@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Curso Avanzado HTML">
+    <meta name="keywords" content="HTML,CSS,Javascript">
+    <meta name="author" content="Duvan Mejia">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+    <fieldset>
+        <legend>Clientes</legend>
+        <label for="text1">Textarea</label>
+        <textarea name="text1" id="" cols="30" rows="10"></textarea>
+        <br> <br>
+
+        <!-- Checkbox -->
+        <label>Tipo transporte</label> <br>
+        <input type="checkbox" name="auto" id="auto" value="auto">
+        <label for="auto">Auto</label> <br>
+        <input type="checkbox" name="moto" id="moto" value="moto">
+        <label for="moto">Moto</label> <br>
+        <input type="checkbox" name="otro" id="otro" value="otro">
+        <label for="otro">Otro</label> <br> <br> <br>
+
+        <!-- Radio Button -->
+        <label>Género</label> <br>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="genero">Masculino</label> <br>
+        <input type="radio" name="genero" id="femenino" value="femenino">
+        <label for="genero">Femenino</label> <br>
+    </fieldset>
+
+    <hr>
+    <fieldset>
+        <legend>Menú desplegable</legend>
+       <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menú</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+       </div>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend>Datalist</legend>
+        <label>Seleccionar un navegador</label>
+        
+        <input list="navegadores" name="navegador" id="navegador">
+        <datalist id="navegadores" >
+            <option value="Edge">Edge</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+    </fieldset>
+
+    <hr>
+    <fieldset id="validaciones">
+        <legend>Validaciones:</legend>
+
+        <form name="myForm" id="myForm" onsubmit="return validateForm()" method="post">
+            <label for="nombre">Primer Nombre</label>
+            <input type="text" name="nombre" id="nombre" maxlength="10" pattern="^[a-zA-Z]{10}"
+                title="Solo letras"> <br><br>
+
+            <label for="nombre2">Segundo Nombre</label> 
+            <input type="text" name="nombre2" id="nombre2" maxlength="10"> <br><br>
+
+            <label for="apellido1">Primer Apellido</label>
+            <input type="text" name="apellido1" id="apellido1" maxlength="10"> <br><br>
+
+            <label for="apellido2">Segundo Apellido</label>
+            <input type="text" name="apellido2" id="apellido2" maxlength="10"> <br><br>
+
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="0" max="130"> <br><br>
+
+            <button type="submit" value="Enviar">Enviar</button>
+            <input type="reset" value="Limpiar">
+
+        </form>
+    </fieldset>
+
+    <hr>
+    <fieldset id="flEstyle">
+        <legend>Jquery:</legend>
+        <button type="button" id="btnAlert">Prueba Jquery</button>
+        <button type="button" id="btnOcultar">Ocultar contenedor</button>
+        <button type="button" id="btnMostrar">Mostrar contenedor</button>
+        <button type="button" id="btnEstilo">Poner estilo</button>
+        <button type="button" id="btnQuitarEstilo">Quitar estilo</button>
+
+        <br> <br>
+
+        <button type="button" id="btnAppend" >Append</button> 
+        <button type="button" id="btnPreappend" >Pre Append</button>
+        <div id="contenedor1">
+            <p id="parrafo1">Esto es un parrafo</p>
+            <p id="parrafo2">Esto es otro parrafo</p>
+        </div>
+
+        <br> <br>
+        <button type="button" id="btnRemove" >Remover</button> 
+        <button type="button" id="btnEmpty" >Limpiar</button>
+        <div id="contenedor2">
+            <p id="parrafo1">Esto es un parrafo</p>
+            <p id="parrafo2">Esto es otro parrafo</p>
+        </div>
+
+        <br> <br>
+        <div id="contenedor3">
+            <p id="parrafo1">Esto es un parrafo</p>
+            <p id="parrafo2">Esto es otro parrafo</p>
+        </div>
+
+    </fieldset>
+
+    <hr>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
