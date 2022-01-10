@@ -7,14 +7,33 @@ function sumar() {
 }
 
 function modifyText() {
-    var table2 = document.createElement('table2');//$('#table2');
+    let table2 = $('#table2');
     table2.firstChild.nodeValue = 'Three';
 }
 
 function load() {
-    var table = document.getElementById('table'); // $('#table');
+    let table = $('#table');
     table.addEventListener('click', modifyText, false);
   
 }
 
 document.addEventListener('DOMContentLoaded', load, false);
+
+class Producto {
+    codigo;
+    nombre;
+    precio;
+    constructor(codigo, nombre, precio = 0) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+}
+
+function inicializarProductos() {
+    let lstProducto = [];
+    for(let i = 0; i < 5; i++) {
+        let producto = new Producto(i.toString(), 'Leche', 2500);
+        lstProducto.push(producto);
+    }
+}
