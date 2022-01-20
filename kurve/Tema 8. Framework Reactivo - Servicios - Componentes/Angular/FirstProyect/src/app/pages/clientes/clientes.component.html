@@ -1,1 +1,59 @@
-<p>clientes works!</p>
+<div> 
+    <label for="">Tabla 1</label> <br> <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Nit</th>
+                <th>Primer Nombre</th>
+                <th>Segundo Nombre</th>
+                <th>Primer Apellido</th>
+                <th>Segundo Apellido</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Salario</th>
+                <th>Activo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cliente of lst">
+                <td>{{ cliente.nit }}</td>
+                <td>{{ cliente.primerNombre }}</td>
+                <td>{{ cliente.segundoNombre }}</td>
+                <td>{{ cliente.primerApellido }}</td>
+                <td>{{ cliente.segundoApellido }}</td>
+                <td>{{ cliente.fechaNacimiento | date: "yyyy/MM/dd" }}</td>
+                <td>{{ cliente.salario | currency }}</td>
+                <td>{{ cliente.activo ? 'Si' : 'No' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <label for="">Tabla 2</label> <br> <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Nit</th>
+                <th>Primer Nombre</th>
+                <th>Segundo Nombre</th>
+                <th>Primer Apellido</th>
+                <th>Segundo Apellido</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Salario</th>
+                <th>Activo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cliente of lst2">
+                <td>{{ cliente.nit }}</td>
+                <td>{{ cliente.primerNombre }}</td>
+                <td>{{ cliente.segundoNombre }}</td>
+                <td>{{ cliente.primerApellido }}</td>
+                <td>{{ cliente.segundoApellido }}</td>
+                <td>{{ cliente.fechaNacimiento | date: "yyyy/MM/dd" }}</td>
+                <td>{{ cliente.salario | currency }}</td>
+                <td>{{ cliente.activo ? 'Si' : 'No' }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
